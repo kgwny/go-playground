@@ -37,3 +37,15 @@ source ~/.zshrc
 ```sh
 go env GOPATH
 ```
+
+## インデント修正
+インデントでスペースが使われている場合にタブへ変換するコマンド例
+
+```sh
+gofmt -w your_file.go
+```
+
+特定のパス配下に存在するすべてのgoファイルを対象に含める場合のコマンド例
+```sh
+find /path/to/dir -name '*.go' -exec gofmt -w {} +
+```
