@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-  "time"
+	"time"
 )
 
 func main() {
-  fmt.Println(time.Now())
+	fmt.Println(time.Now())
 }
