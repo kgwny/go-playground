@@ -1,16 +1,16 @@
-# hello.go
+# helloworld.go
 
 ## 実行
 ```sh
-go run hello.go
+go run helloworld.go
 ```
 
 ## ビルドしてバイナリ作成
 ```sh
-go build hello.go
+go build helloworld.go
 ```
 
 ## バイナリで実行
 ```sh
-./hello
+./helloworld
 ```
