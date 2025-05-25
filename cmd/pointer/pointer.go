@@ -12,11 +12,10 @@ func main() {
 	// 基本的なポインター操作
 	fmt.Println("--- 基本的なポインター操作 ---")
 	x := 10
-	p := &x // x のポインターを取得する
 	fmt.Println("x =", x)
+	p := &x                 // x のポインターを取得する
 	fmt.Println("*p =", *p) // ポインターを使って x の値にアクセス
-
-	*p = 20 // ポインター経由で x の値を変更
+	*p = 20                 // ポインター経由で x の値を変更
 	fmt.Println("x =", x)
 
 	// ポインター引数の関数
@@ -53,10 +52,10 @@ func main() {
 	// ポインターのポインター
 	fmt.Println("\n--- ポインターのポインター ---")
 	a := 42
-	ptr1 := &a
-	ptr2 := &ptr1
 	fmt.Println("a:", a)
+	ptr1 := &a
 	fmt.Println("*ptr1:", *ptr1)
+	ptr2 := &ptr1
 	fmt.Println("**ptr2:", **ptr2)
 
 	// nilポインターの扱い
